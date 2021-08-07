@@ -8,12 +8,64 @@
     <link rel="stylesheet" href="Bootstrap/css/bootstrap.min.css">
 </head>
 <body>
+
+    <!-- Começo barra de navegação-->
+    <nav class="navbar navbar-default ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapsed" data-target="#barra-navegacao">
+
+                    <span class="sr-only">Alternar menu</span> 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+                <a href="#" class="navbar-brand">Logo</a>
+            </div>
+
+            <div class="collapsed navbar-collapsed" id="barra-navegacao">
+                <!-- menus e alinhamento-->
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Empresas</a></li>
+                    <li><a href="#">Clientes</a></li>
+                    <li><a href="#">Produtos</a></li>
+
+                    <!-- para fazer com que a barra do minha conta desça-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Minha conta <span class="caret"></span></a>
+
+                        <!-- conteudo ao clicar no minha conta-->
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Editar</a></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+
+                    </li>
+                </ul>
+
+            </div>
+
+
+
+        </div>
+
+    </nav>
+
+
+
+
     <div class="container">
 
+        <!--Page-header faz essa linha abaixo do formulario-->
         <div class="page-header">
             <h1>Formulário Bootstrap</h1>
         </div>       
 
+        <!--Row para dividir, na tela tem 12 grid o col é usado para isso, sm é para tablets, o meu é MD(desktop), 8 são os numero de colunas que a div irá ocupar-->
         <div class="row">
             <div class="col-sm-8">
                 <h3>Cadastre-se</h3>
@@ -22,7 +74,7 @@
                         <label for="nome">Nome</label>
                         <input type="text" name="name" id="nome" class="form-control" >
                     </div>
-
+                    <!--Form-group junta tudo-->
                     <div class="form-group">
                         <label for="email">E-mail</label>
                         <input type="email" name="name" id="email" class="form-control" >
@@ -70,6 +122,10 @@
         </div>
 
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+    <script src="./Bootstrap/js/bootstrap.min.js"></script>
     
 </body>
 </html>
